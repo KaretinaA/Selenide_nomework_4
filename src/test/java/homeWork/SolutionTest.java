@@ -13,11 +13,7 @@ public class SolutionTest {
         open("https://github.com/");
         $x("//*[contains(text(), 'Solutions')]").hover();
         $x("//*[contains(text(), 'Enterprise')]").click();
-        sleep(2000);
-       // $(".position-relative h1").shouldHave(text("Build like the best"));
         $x("//*[contains(text(), 'Build like the best')]").shouldHave(text("Build like the best"));
-
-
 
     }
 }
