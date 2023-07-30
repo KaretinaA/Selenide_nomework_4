@@ -6,14 +6,13 @@ import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Configuration.browserSize;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class Wiki {
     @Test
     void selenideHomework() throws InterruptedException {
-        browserSize = "1920x1080";
+        Configuration.browserSize = "1920x1080";
         open("https://github.com/selenide/selenide/");
         $("#wiki-tab").click();
         Thread.sleep(3000);
