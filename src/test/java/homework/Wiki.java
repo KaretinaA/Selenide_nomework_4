@@ -1,4 +1,4 @@
-package homeWork;
+package homework;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class Wiki {
     @Test
-    void selenideHomework() throws InterruptedException {
+    void selenideHomeworkTest() {
         Configuration.browserSize = "1920x1080";
         open("https://github.com/selenide/selenide/");
         $("#wiki-tab").click();
@@ -27,8 +27,6 @@ public class Wiki {
                 "    $(\"#first\").should(visible).click();\n" +
                 "    $(\"#second\").should(visible).click();\n" +
                 "  }"));
-      sleep(5000);
-
     }
 
 }

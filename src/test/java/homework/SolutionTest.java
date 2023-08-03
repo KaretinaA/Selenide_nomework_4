@@ -1,4 +1,4 @@
-package homeWork;
+package homework;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Test;
