@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class DragAndDropTest {
     @Test
-    void DragAndDropTest() {
+    void dragAndDropTest() {
         Configuration.browserSize = "1920x1080";
         open("https://the-internet.herokuapp.com/drag_and_drop");
         //происходит только зажатие эелемента, но не перенос
