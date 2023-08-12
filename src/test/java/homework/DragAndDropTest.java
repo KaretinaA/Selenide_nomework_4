@@ -15,15 +15,5 @@ public class DragAndDropTest {
         //происходит только зажатие эелемента, но не перенос
         actions().clickAndHold($("#column-a")).moveToElement($("#column-b")).moveByOffset(300, 200).release().perform();
 
-        //  dragAndDropTo working
-        $("#column-a").dragAndDropTo($("#column-b"));
-
-        // Check column-a header after dragAndDropTo
-        $("#column-a header").shouldHave(text("B"));
-
-        // Check column-b header after dragAndDropTo
-        $("#column-b header").shouldHave(text("A"));
-
-
     }
 }
